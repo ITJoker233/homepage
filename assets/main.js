@@ -55,6 +55,8 @@ App = {
         container.appendChild(renderer.domElement);
         document.addEventListener('mousemove', onDocumentMouseMove, false);
         window.addEventListener('resize', onWindowResize, false)
+        var email = document.getElementById("Email");
+        email.href = window.atob("bWFpbHRvOmlAaXRqb2tlci5jbg==");
     },
 }
 if (!Detector.webgl) Detector.addGetWebGLMessage();
@@ -104,4 +106,19 @@ function render() {
     renderer.render(scene, camera)
 }
 App.init();
+console.clear();
+console.log(
+    "\n   %c  Domain: https://www.itjoker.cn  BY ITJoker  \n\n",
+    "color: #ffffff; background: rgb(0, 145, 228); padding:5px 0;border-radius: 5px;",
+);
+console.log("%c  如果你想抄就抄吧，不过署名写下我ITJoker，谢谢~ \n  %c Update Date:2020.1.11\n  %c Author: ITJoker\n  %c Description Web Site：https://www.itjoker.cn\n  %c Blog Web Site: https://blog.itjoker.cn\n  %c Blog RSS Site: https://blog.itjoker.cn/atom.xml\n  %c 如果你想互换友链的话,请到该地址下评论留言:https://blog.itjoker.cn/friends\n  %c 友链格式:\n      博客地址:\"https://blog.itjoker.cn\"\n      博客名字:\"ITJoker\"\n      博客描述:\"ITJoker\"\n  %c 注：并非一定要以这种格式,最好包括这三个要素~如果没有及时更新，可能只是我没有看到~233",
+    "color: rgb(0, 145, 228);;font-size:12px;",
+    "color: rgb(0, 145, 228);;font-size:12px;",
+    "color: rgb(0, 145, 228);;font-size:12px;",
+    "color: rgb(0, 145, 228);;font-size:12px;",
+    "color: rgb(0, 145, 228);;font-size:12px;",
+    "color: rgb(0, 145, 228);;font-size:12px;",
+    "color: rgb(0, 145, 228);;font-size:12px;",
+    "color: rgb(0, 145, 228);;font-size:12px;",
+    "color: rgb(0, 145, 228);;font-size:12px;", )
 animate();
