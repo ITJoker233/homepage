@@ -15,7 +15,7 @@
     <meta name="keywords" content="ITJoker233,ITJoker,ITJoker的个人主页,IT,Joker">
     <meta name="description" content="Be brave no matter what your life is like to you. ">
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" />
-    <link rel="stylesheet" href="https://purge.jsdelivr.net/gh/ITJoker233/homepage/assets/main.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/homepage/assets/main.min.css" />
     <!--
     如果你想抄就抄吧，不过署名写下我ITJoker，谢谢~
     Update Date:2020.08.13
@@ -56,11 +56,11 @@
 
 </html>
 
-<script type="text/javascript" src="https://purge.jsdelivr.net/gh/ITJoker233/homepage/assets/ThreeWebGL.min.js"></script>
-<script type="text/javascript" src="https://purge.jsdelivr.net/gh/ITJoker233/homepage/assets/ThreeExtras.min.js"></script>
-<script type="text/javascript" src="https://purge.jsdelivr.net/gh/ITJoker233/homepage/assets/Detector.min.js"></script>
-<script type="text/javascript" src="https://purge.jsdelivr.net/gh/ITJoker233/homepage/assets/RequestAnimationFrame.min.js"></script>
-<script src="https://purge.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ITJoker233/homepage/assets/ThreeWebGL.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ITJoker233/homepage/assets/ThreeExtras.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ITJoker233/homepage/assets/Detector.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ITJoker233/homepage/assets/RequestAnimationFrame.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
 <script id="vs" type="x-shader/x-vertex">
     varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }
 </script>
@@ -68,4 +68,4 @@
     uniform sampler2D map; uniform vec3 fogColor; uniform float fogNear; uniform float fogFar; varying vec2 vUv; void main() { float depth = gl_FragCoord.z / gl_FragCoord.w; float fogFactor = smoothstep(fogNear, fogFar, depth); gl_FragColor = texture2D(map,
     vUv); gl_FragColor.w *= pow(gl_FragCoord.z, 20.0); gl_FragColor = mix(gl_FragColor, vec4(fogColor, gl_FragColor.w), fogFactor); }
 </script>
-<script src="https://purge.jsdelivr.net/gh/ITJoker233/homepage/assets/main.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ITJoker233/homepage/assets/main.min.js"></script>
